@@ -1,0 +1,61 @@
+# Blender backup and autosave files
+*.blend1
+*.blend2
+*.blend@
+*.blend~
+*.tmp
+*.autosave
+*.blend.save
+*.backup
+
+# Fusion 360 archive files
+*.f3d
+*.f3z
+
+# G-code and 3D slicer output
+*.gcode
+*.g
+*.gx
+*.ufp
+*.factory
+*.3mf
+*.obj~
+*.stl~      # Backup STLs
+
+# PrusaSlicer, OrcaSlicer, and Cura configs & previews
+*.ini
+*.curaprofile
+*.prusaslicer
+*.slice
+*.step
+*_autosave*
+preview.png
+plate_thumbnail.png
+plate_*.png
+project_plate_*.3mf
+
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment folders
+.venv/
+env/
+venv/
+.env
+.envrc
+
+# VSCode settings
+.vscode/
+
+# Windows junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS junk
+.DS_Store
+
+# Git keepers
+!.gitkeep
