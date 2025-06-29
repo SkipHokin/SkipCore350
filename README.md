@@ -79,11 +79,26 @@ Contributions and STLs from the open source 3DP ecosystem
 
 All third-party parts used will be credited accordingly. Contributions welcome. Attribution is key to the spirit of this project.
 
+Attribution Format for STLs:
+If reusing or modifying community-designed STLs:
+
+Original filename (and author if known)
+
+License used (e.g. CC BY, MIT)
+
+Modified filename (if applicable)
+
+Note in CREDITS.md
+
+Example:
+
+z_motor_mount_simplcore.stl - Original from SimpleCore by [Author] (CC BY 4.0)
+z_motor_mount_skipmod.stl - Modified for SkipCore350
+
 💪 Let’s Build Something Great
 
 SkipCore350 is more than just a printer — it’s a collaborative process. A chance to explore design, motion, and fabrication from the ground up. With the right mix of smarts, patience, and 9mm belts, we'll build a machine that punches well above its budget.
 
 Repo: https://github.com/SkipHokin/SkipCore350
 License: MIT
-
 
