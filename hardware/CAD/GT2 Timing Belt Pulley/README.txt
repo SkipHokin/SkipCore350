@@ -1,0 +1,4 @@
+Timing Belt Pulley - GT2 20 Teeth by MrAmericanMike on Thingiverse: https://www.thingiverse.com/thing:2503601
+
+Summary:
+4 Versions of a same pulley style.GT2 20 Teeth with 5mm inner hole diameterv01 have a circular holev02 have a flat side on themFiles names "Tolerances" have a 0,1 to 0,2 tolerance on the teeth and on the inner hole.Test what works better for you.Outer diameter is 16mm. Teeth area is 7mm in width. Total piece height is 15,8mmLet me know how it works for you guys. I may upload more variations if someone needs them ;)PS: Print in the best resolution possible and if you have a 0,3mm (or smaller) nozzle even better I guess.
