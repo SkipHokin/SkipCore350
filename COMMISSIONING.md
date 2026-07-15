@@ -2,7 +2,7 @@
 
 Repo target: `SkipHokin/SkipCore350`  
 Printer: SkipCore350 CoreXY, BTT Manta M8P v2 + CB1, Klipper  
-Coordinate model: rear-right home, `X0 Y0` at rear-right, printable space negative: `X -350..0`, `Y -350..0`  
+Coordinate model: rear-right home, `X0 Y0` at rear-right, printable space positive: `X 0..340`, `Y 0..340`
 Probe: BLTouch, `X -38`, `Y 2`  
 Nozzle: 0.4 mm
 
@@ -12,12 +12,12 @@ Nozzle: 0.4 mm
 
 ## Gate 0 — Safety snapshot
 
-- [ ] Backup current `printer.cfg`
-- [ ] Backup all included `.cfg` files
-- [ ] Backup Orca profile
-- [ ] Take photos of wiring and board connections
-- [ ] Confirm 24 V and mains wiring are mechanically secure
-- [ ] Confirm bed earth/grounding where applicable
+- [X] Backup current `printer.cfg`
+- [X] Backup all included `.cfg` files
+- [X] Backup Orca profile
+- [X] Take photos of wiring and board connections
+- [X] Confirm 24 V and mains wiring are mechanically secure
+- [X] Confirm bed earth/grounding where applicable
 
 Notes:
 
@@ -31,12 +31,12 @@ Notes:
 
 Do not move motors yet.
 
-- [ ] Confirm emergency stop works
-- [ ] Confirm hotend temperature reads room temperature
-- [ ] Confirm bed temperature reads room temperature
-- [ ] Confirm CB1/M8P status is normal
-- [ ] Confirm no heater is unexpectedly on
-- [ ] Confirm BLTouch self-test on startup
+- [X] Confirm emergency stop works
+- [X] Confirm hotend temperature reads room temperature
+- [X] Confirm bed temperature reads room temperature
+- [X] Confirm CB1/M8P status is normal
+- [X] Confirm no heater is unexpectedly on
+- [X] Confirm BLTouch self-test on startup
 
 Useful commands:
 
@@ -68,10 +68,10 @@ QUERY_PROBE
 
 Expected:
 
-- [ ] X endstop reports open when clear and TRIGGERED when pressed
-- [ ] Y endstop reports open when clear and TRIGGERED when pressed
-- [ ] BLTouch reports open when pin down
-- [ ] BLTouch reports TRIGGERED when pin is gently pushed up
+- [X] X endstop reports open when clear and TRIGGERED when pressed
+- [X] Y endstop reports open when clear and TRIGGERED when pressed
+- [X] BLTouch reports open when pin down
+- [X] BLTouch reports TRIGGERED when pin is gently pushed up
 
 Notes:
 
@@ -106,12 +106,12 @@ G90
 
 Expected for this coordinate model:
 
-- [ ] `X-10` moves left
-- [ ] `X10` moves right
-- [ ] `Y-10` moves toward the front
-- [ ] `Y10` moves toward the rear
-- [ ] Z motors all move the same direction
-- [ ] No binding, grinding, crossed CoreXY motion, or cable-chain issue
+- [X] `X-10` moves left
+- [X] `X10` moves right
+- [X] `Y-10` moves toward the front
+- [X] `Y10` moves toward the rear
+- [X] Z motors all move the same direction
+- [X] No binding, grinding, crossed CoreXY motion, or cable-chain issue
 
 Notes:
 
@@ -149,10 +149,10 @@ Then:
 G28 Z
 ```
 
-- [ ] X homes to right/rear-right side as expected
-- [ ] Y homes to rear
-- [ ] Final XY after homing is `X0 Y0`
-- [ ] Z homes using BLTouch without nozzle crash
+- [X] X homes to right/rear-right side as expected
+- [X] Y homes to rear
+- [X] Final XY after homing is `X0 Y0`
+- [X] Z homes using BLTouch without nozzle crash
 
 Notes:
 
@@ -178,22 +178,22 @@ G1 X-50 Y-50 F3000
 Then expand carefully:
 
 ```gcode
-G1 X-330 Y-330 F3000
+G1 X330 Y330 F3000
 ```
 
-- [ ] Belt paths clear
-- [ ] Cable chains clear
-- [ ] BLTouch clears belts and frame
-- [ ] Toolhead clears frame extremes
-- [ ] True available X travel recorded
-- [ ] True available Y travel recorded
+- [X] Belt paths clear
+- [X] Cable chains clear
+- [X] BLTouch clears belts and frame
+- [X] Toolhead clears frame extremes
+- [X] True available X travel recorded
+- [X] True available Y travel recorded
 
 Measured travel:
 
 ```text
-X travel:
-Y travel:
-Z travel:
+X travel: 340
+Y travel: 330
+Z travel: 300
 ```
 
 Notes:
