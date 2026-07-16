@@ -236,9 +236,10 @@ Targets:
 Recorded probe accuracy:
 
 ```text
-samples:
-range:
-standard deviation:
+samples: 10
+range: 0.008750 mm
+standard deviation: 0.002453 mm
+average: 0.011875 mm
 ```
 
 Notes:
@@ -258,9 +259,9 @@ G28 Z
 Z_TILT_ADJUST
 ```
 
-- [ ] First run completes
-- [ ] Second run makes only a tiny correction
-- [ ] Bed is not chasing itself up/down repeatedly
+- [X] First run completes
+- [X] Second run makes only a tiny correction
+- [X] Bed is not chasing itself up/down repeatedly
 
 Notes:
 
@@ -325,18 +326,26 @@ PID_CALIBRATE HEATER=heater_bed TARGET=60
 SAVE_CONFIG
 ```
 
-- [ ] Hotend heats from room temp to 220 °C normally
-- [ ] No heater rate fault
-- [ ] Hotend holds stable after PID tune
-- [ ] Bed heats to 60 °C normally
-- [ ] Bed holds stable after PID tune
-- [ ] Heatbreak fan comes on at correct temperature
-- [ ] Part fans stay off unless requested
+- [X] Hotend heats from room temp to 220 °C normally
+- [X] No heater rate fault
+- [X] Hotend holds stable after PID tune
+- [X] Bed heats to 60 °C normally
+- [X] Bed holds stable after PID tune
+- [X] Heatbreak fan comes on at correct temperature
+- [X] Part fans stay off unless requested
 
 Notes:
 
 ```text
+Hotend PID at 220 °C
+Kp: 44.368
+Ki: 5.378
+Kd: 91.509
 
+Bed PID at 60 °C
+Kp: 63.508
+Ki: 1.687
+Kd: 597.765
 ```
 
 ---
@@ -363,18 +372,18 @@ Formula:
 new_rotation_distance = old_rotation_distance × actual_extruded / requested_extruded
 ```
 
-- [ ] 100 mm command gives 99–101 mm actual
-- [ ] No skipping
-- [ ] No grinding filament
-- [ ] Hotend flow seems normal
+- [X] 100 mm command gives 99–101 mm actual
+- [X] No skipping
+- [X] No grinding filament
+- [X] Hotend flow seems normal
 
 Recorded result:
 
 ```text
-old rotation_distance:
-requested extrusion:
-actual extrusion:
-new rotation_distance:
+old rotation_distance: 118
+requested extrusion: 100
+actual extrusion: 100
+new rotation_distance: 100
 ```
 
 Notes:
@@ -413,10 +422,10 @@ Fan: off for first layer, normal after
 
 Pass:
 
-- [ ] Lines touch neatly
-- [ ] No ploughing
-- [ ] No round loose strings
-- [ ] Same first-layer quality across the tested area
+- [X] Lines touch neatly
+- [X] No ploughing
+- [X] No round loose strings
+- [X] Same first-layer quality across the tested area
 
 Notes:
 
